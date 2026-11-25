@@ -1,0 +1,31 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in the Embershot browser extension
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Embershot & Browser Version
+      description: Which Embershot version and browser (Chrome, Edge, Brave, Firefox) are you using?
+      placeholder: "Embershot v1.6.0 on Chrome 132 (Windows 11)"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Exact steps to trigger the issue.
+      placeholder: |
+        1. Open page ...
+        2. Trigger capture mode ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs Actual Behavior
+      description: What did you expect to happen, and what happened instead?
+    validations:
+      required: true
